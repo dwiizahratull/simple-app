@@ -1,8 +1,8 @@
 pipeline {
   agent any
   environment {
-  # ubah 'youruser/simple-app' dengan nama kamu dan repo proyek kamu
-    IMAGE_NAME = 'youruser/simple-app'
+  # ubah 'dwiizahratull/simple-app' dengan nama kamu dan repo proyek kamu
+    IMAGE_NAME = 'dwiizahratull/simple-app'
     REGISTRY = 'https://index.docker.io/v1/'
   # ubah 'dockerhub-credentials' dengan credential yang sudah kamu buat 
     REGISTRY_CREDENTIALS = 'dockerhub-credentials'
@@ -43,4 +43,5 @@ pipeline {
       echo 'Selesai build'
     }
   }
+
 }
